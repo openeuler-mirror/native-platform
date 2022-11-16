@@ -2,11 +2,11 @@
 
 Name:          native-platform
 Version:       0.14
-Release:       15
+Release:       16
 Summary:       Java bindings for various native APIs
 License:       ASL 2.0
 URL:           https://github.com/adammurdoch/native-platform
-Source0:       native-platform-%{version}.tar.gz
+Source0:       https://github.com/gradle/native-platform/archive/0.14/native-platform-%{version}.tar.gz
 Source1:       native-platform-0.7-Makefile
 Patch0:        0001-Load-lib-from-system.patch
 Patch1:        0002-Use-library-name-without-arch.patch
@@ -50,5 +50,8 @@ install -pm 0755 build/binaries/libnative-platform.so %{buildroot}%{_libdir}/nat
 %{_javadocdir}/%{name}
 
 %changelog
+* Mon Nov 14 2022 wulei <wulei80@h-partners.com> - 0.14-16
+- Modifying the source code package address
+
 * Thu Dec 7 2019 openEuler Buildteam <buildteam@openeuler.org> - 0.14-15
 - Package init
