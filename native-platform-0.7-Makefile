@@ -4,7 +4,7 @@
 #  Debian use case for now.
 #  Author: Damien Raude-Morvan <drazzib@debian.org>
 #  Adapted for Fedora by: gil cattaneo <puntogil@libero.it>
-CXX=g++
+CXX?=g++
 STRIP=strip
 # which is the best solution?
 JOPT_JAR=$(shell build-classpath jopt-simple)
